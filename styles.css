@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo permanece a mesma */
+}
+
+header {
+    background: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Muda para inline-block para permitir o formato circular */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto do menu */
+    text-decoration: none;
+    padding: 10px 15px; /* Adiciona padding para aumentar a área clicável */
+    border-radius: 50%; /* Faz os links do menu ficarem circulares */
+    background-color: #00509e; /* Azul mais claro para o fundo dos itens do menu */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+nav ul li a:hover {
+    background-color: #003366; /* Cor de fundo ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #003366; /* Azul escuro para os títulos */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #003366; /* Azul escuro */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
