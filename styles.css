@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,10 +17,12 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Usar flexbox para o layout do menu */
+    justify-content: center; /* Centraliza os itens do menu */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
 }
 
 nav ul li {
-    display: inline-block; /* Muda para inline-block para permitir o formato circular */
     margin: 0 15px;
 }
 
@@ -37,6 +41,8 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+    max-width: 800px; /* Limita a largura máxima do conteúdo principal */
+    margin: 20px auto; /* Centraliza o conteúdo principal */
 }
 
 h2 {
@@ -51,4 +57,24 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Muda a direção da lista para coluna em telas menores */
+        align-items: center; /* Centraliza os itens do menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adiciona margem vertical entre os itens do menu */
+    }
+
+    nav ul li a {
+        border-radius: 5px; /* Muda o formato para um retângulo em telas menores */
+    }
+
+    main {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
 }
