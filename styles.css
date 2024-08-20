@@ -30,7 +30,7 @@ nav ul li a {
     color: #fff; /* Cor do texto do menu */
     text-decoration: none;
     padding: 10px 15px; /* Adiciona padding para aumentar a área clicável */
-    border-radius: 50%; /* Faz os links do menu ficarem circulares */
+    border-radius: 5px; /* Faz os links do menu ficarem arredondados */
     background-color: #00509e; /* Azul mais claro para o fundo dos itens do menu */
     transition: background-color 0.3s; /* Transição suave para a mudança de cor */
 }
@@ -71,7 +71,9 @@ footer {
     }
 
     nav ul li a {
-        border-radius: 5px; /* Muda o formato para um retângulo em telas menores */
+        padding: 10px; /* Ajusta o padding para melhor usabilidade em telas menores */
+        width: 100%; /* Faz os links ocuparem 100% da largura do contêiner */
+        text-align: center; /* Centraliza o texto dos links */
     }
 
     main {
